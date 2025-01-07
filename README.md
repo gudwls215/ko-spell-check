@@ -8,7 +8,9 @@
 ---  
 ## 📦 설치  Python 3.7 이상 버전에서 사용 가능합니다.  
 
-`pip install ko-spell-check`
+```
+pip install ko-spell-check
+```
 
 
 * * *
