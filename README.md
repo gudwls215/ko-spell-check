@@ -8,7 +8,7 @@
 ---  
 ## 📦 설치  Python 3.7 이상 버전에서 사용 가능합니다.  
 
-bash pip install ko-spell-check
+`pip install ko-spell-check`
 
 
 * * *
@@ -29,8 +29,8 @@ bash pip install ko-spell-check
 
 ```
 from kospellcheck import SpellChecker  
-# SpellChecker 초기화 (passport_key는 네이버 API 키). 없으면 SpellChecker() 로 사용
-spell_checker = SpellChecker("your_passport_key")  
+# SpellChecker 초기화 (passport_key는 네이버 API 키). 
+spell_checker = SpellChecker("your_passport_key") # your_passport_key 없으면 SpellChecker() 로 사용
 
 # 맞춤법 검사 수행 
 result = spell_checker.check_spelling("맞춤법 검사할 문장") 
@@ -54,7 +54,7 @@ print(result)
 
 ```
 from kospellcheck import SpellChecker  
-spell_checker = SpellChecker("your_passport_key")  # 특수문자를 제거한 후 맞춤법 검사 
+spell_checker = SpellChecker("your_passport_key")  # 특수문자를 제거한 후 맞춤법 검사 your_passport_key 없으면 SpellChecker() 로 사용
 result = spell_checker.check_spelling_clean("맞춤법 검사할 문장!!!") 
 print(result)
 ```
